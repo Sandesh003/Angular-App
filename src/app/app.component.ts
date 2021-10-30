@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = '';
+  serverID: number = 10;
+  serverStatus: string = 'offline';
+  serverGeneral(){
+    return this.serverStatus;
+  }
 }

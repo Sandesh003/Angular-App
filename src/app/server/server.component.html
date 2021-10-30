@@ -1,0 +1,12 @@
+<h4>assignment practice</h4>
+<div class="container">
+<label> Username</label>
+<input 
+    type="text"
+    class="form-control"
+    [(ngModel)] = "userName">
+</div>
+<div class="container my-4">
+    <button class="btn btn-primary my-4" [disabled] = "userName === '' "  (click) = "userName = ''">reset user</button>
+</div>
+    <p> {{ userName }} </p>
