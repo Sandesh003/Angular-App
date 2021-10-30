@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  constructor() { }
+  allowServer: string = "";
+  serverName = "";
+ 
+  
+  constructor() { 
+
+}
+
+onUpdateServer(event : any){
+  this.serverName = event.target.value;
+  
+}
+
+myfun(){
+  return this.allowServer = "helllo there... your server name is " + this.serverName;
+}
 
   ngOnInit(): void {
   }
-
+ 
 }
