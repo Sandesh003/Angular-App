@@ -9,6 +9,7 @@ export class ServersComponent implements OnInit {
 
   allowServer: string = "";
   serverName = "";
+  created = false;
  
   
   constructor() { 
@@ -21,7 +22,9 @@ onUpdateServer(event : any){
 }
 
 myfun(){
+  this.created = true;
   return this.allowServer = "helllo there... your server name is " + this.serverName;
+
 }
 
   ngOnInit(): void {

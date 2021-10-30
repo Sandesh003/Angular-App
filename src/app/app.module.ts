@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 
 import { ServersComponent } from './servers/servers.component';
+import { colorComponent } from './color/color.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    colorComponent
   ],
   imports: [
     BrowserModule,
